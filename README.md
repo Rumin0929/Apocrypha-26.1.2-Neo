@@ -1,25 +1,40 @@
 
-Installation information
+About the mod
 =======
+This is a mod being developed,whose theme is adventure.
+The most recently version is 0.0.1-alpha released on 2026.11.19.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Update Log(0.0.1-alpha)
+=======
+8 cards of Tarot with different functions.
+(Besides there are 16 cards of Tarot without functions,which could only use commands to get)
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+Silver--a new ore with tools and blocks associated with it, however are still being developed so you couldn't get them in survival mode
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+A recipe which makes experience bottle can be made
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+Emerald shard? Just wait,it hasn't any use now.
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+About Textures
+======
+Most of the textures are drew by AI(Deepseek-v4.1-Flash),others are drew by myself.
+
+
+关于这个模组
+======
+尚在开发中的冒险模组
+最新版本为2026.11.19发布的0.0.1-alpha
+
+更新日志（0.0.1-alpha）
+=======
+8张有着不同功能的塔罗牌（以及16张没有功能的塔罗牌，只能通过指令获取）
+
+银--一种新矿物，包含银质工具以及银系列方块，但目前银还不能在世界中生成
+
+附魔之瓶的配方
+
+绿宝石碎片，目前什么用都没有
+
+材质相关
+======
+大部分贴图由deepseek-V4.1-Flash绘制，其余少部分由我本人绘制
