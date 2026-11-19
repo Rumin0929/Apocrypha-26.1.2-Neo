@@ -1,0 +1,58 @@
+{
+  "item.apocrypha.tarot.fool_card": "Fool Card",
+  "item.apocrypha.tarot.magician_card": "Magician Card (Upright)",
+  "item.apocrypha.tarot.high_priestess_card": "High Priestess Card (Upright)",
+  "item.apocrypha.tarot.empress_card": "Empress Card (Upright)",
+  "item.apocrypha.tarot.emperor_card": "Emperor Card (Upright)",
+  "item.apocrypha.tarot.hierophant_card": "Hierophant Card (Upright)",
+  "item.apocrypha.tarot.lovers_card": "Lovers Card (Upright)",
+  "item.apocrypha.tarot.chariot_card": "Chariot Card (Upright)",
+  "item.apocrypha.tarot.strength_card": "Strength Card (Upright)",
+  "item.apocrypha.tarot.hermit_card": "Hermit Card (Upright)",
+  "item.apocrypha.tarot.wheel_of_fortune_card": "Wheel Of Fortune Card(Upright)",
+  "item.apocrypha.tarot.justice_card": " Justice Card (Upright)",
+  "item.apocrypha.tarot.hanged_man_card": "Hanged Man Card (Upright)",
+  "item.apocrypha.tarot.death_card": "Death Card (Upright)",
+  "item.apocrypha.tarot.temperance_card": "Temperance Card (Upright)",
+  "item.apocrypha.tarot.devil_card": "Devil Card (Upright)",
+  "item.apocrypha.tarot.tower_card": "Tower Card (Upright)",
+  "item.apocrypha.tarot.star_card": "Star Card (Upright)",
+  "item.apocrypha.tarot.moon_card": "Moon Card (Upright)",
+  "item.apocrypha.tarot.sun_card": "Sun Card (Upright)",
+  "item.apocrypha.tarot.judgement_card": "Judgement Card (Upright)",
+  "item.apocrypha.tarot.world_card": "World Card (Upright)",
+
+  "item.apocrypha.tarot.card_moon": "Moon Card (Reversed)",
+  "item.apocrypha.tarot.card_sun": "Sun Card (Reversed)",
+
+  "item.apocrypha.silver_sword": "Silver Sword",
+  "item.apocrypha.silver_pickaxe": "Silver Pickaxe",
+  "item.apocrypha.silver_axe": "Silver Axe",
+  "item.apocrypha.silver_hoe": "Silver Hoe",
+  "item.apocrypha.silver_shovel": "Silver Shovel",
+
+
+
+  "item.apocrypha.emerald_shard": "Emerald Shard",
+  "item.apocrypha.raw_silver": "Raw Sliver",
+  "item.apocrypha.silver_ingot": "Sliver Ingot",
+
+  "block.apocrypha.silver_block": "Block of Sliver",
+  "block.apocrypha.silver_ore": "Sliver Ore",
+  "block.apocrypha.deepslate_silver_ore": "Deepslate Sliver Ore",
+  "block.apocrypha.raw_silver_block": "Block of Raw Sliver",
+
+
+  "itemGroup.apocrypha": "Tarot",
+
+
+
+
+  "apocrypha.configuration.title": "Apocrypha Configs",
+  "apocrypha.configuration.section.apocrypha.common.toml": "Apocrypha Configs",
+  "apocrypha.configuration.section.apocrypha.common.toml.title": "Apocrypha Configs",
+  "apocrypha.configuration.items": "Item List",
+  "apocrypha.configuration.logDirtBlock": "Log Dirt Block",
+  "apocrypha.configuration.magicNumberIntroduction": "Magic Number Text",
+  "apocrypha.configuration.magicNumber": "Magic Number"
+}

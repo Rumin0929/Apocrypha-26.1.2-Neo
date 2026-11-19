@@ -1,0 +1,46 @@
+{
+  "item.apocrypha.tarot.fool_card": "愚者卡",
+  "item.apocrypha.tarot.magician_card": "正·魔术师卡",
+  "item.apocrypha.tarot.high_priestess_card": "正·女祭司卡",
+  "item.apocrypha.tarot.empress_card":"正·皇后卡",
+  "item.apocrypha.tarot.emperor_card":"正·皇帝卡",
+  "item.apocrypha.tarot.hierophant_card":"正·教皇卡",
+  "item.apocrypha.tarot.lovers_card":"正·恋人卡",
+  "item.apocrypha.tarot.chariot_card":"正·战车卡",
+  "item.apocrypha.tarot.strength_card":"正·力量卡",
+  "item.apocrypha.tarot.hermit_card":"正·隐者卡",
+  "item.apocrypha.tarot.wheel_of_fortune_card":"正·命运之轮卡",
+  "item.apocrypha.tarot.justice_card": "正·正义卡",
+  "item.apocrypha.tarot.hanged_man_card":"正·倒吊人卡",
+  "item.apocrypha.tarot.death_card": "正·死亡卡",
+  "item.apocrypha.tarot.temperance_card":"正·节制卡",
+  "item.apocrypha.tarot.devil_card":"正·恶魔卡",
+  "item.apocrypha.tarot.tower_card": "正·塔卡",
+  "item.apocrypha.tarot.star_card":"正·星星卡",
+  "item.apocrypha.tarot.moon_card":"正·月亮卡",
+  "item.apocrypha.tarot.sun_card":"正·太阳卡",
+  "item.apocrypha.tarot.judgement_card":"正·审判卡",
+  "item.apocrypha.tarot.world_card": "正·世界卡",
+
+  "item.apocrypha.tarot.card_moon":"倒·月亮卡",
+  "item.apocrypha.tarot.card_sun": "倒·太阳卡",
+
+  "item.apocrypha.silver_sword": "银剑",
+  "item.apocrypha.silver_pickaxe": "银镐",
+  "item.apocrypha.silver_axe": "银斧",
+  "item.apocrypha.silver_hoe": "银锄",
+  "item.apocrypha.silver_shovel": "银锹",
+
+
+  "item.apocrypha.emerald_shard":"绿宝石碎片",
+  "item.apocrypha.raw_silver": "粗银",
+  "item.apocrypha.silver_ingot":"银锭",
+
+  "block.apocrypha.silver_block":"银块",
+  "block.apocrypha.silver_ore":"银矿石",
+  "block.apocrypha.deepslate_silver_ore":"深层银矿石",
+  "block.apocrypha.raw_silver_block":"粗银块",
+
+
+  "itemGroup.apocrypha":"塔罗"
+}

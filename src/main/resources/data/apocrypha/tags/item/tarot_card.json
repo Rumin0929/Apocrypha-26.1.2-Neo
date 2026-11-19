@@ -1,0 +1,28 @@
+{
+  "values": [
+    "apocrypha:tarot/fool_card",
+    "apocrypha:tarot/magician_card",
+    "apocrypha:tarot/high_priestess_card",
+    "apocrypha:tarot/empress_card",
+    "apocrypha:tarot/emperor_card",
+    "apocrypha:tarot/hierophant_card",
+    "apocrypha:tarot/lovers_card",
+    "apocrypha:tarot/chariot_card",
+    "apocrypha:tarot/strength_card",
+    "apocrypha:tarot/hermit_card",
+    "apocrypha:tarot/wheel_of_fortune_card",
+    "apocrypha:tarot/justice_card",
+    "apocrypha:tarot/hanged_man_card",
+    "apocrypha:tarot/death_card",
+    "apocrypha:tarot/temperance_card",
+    "apocrypha:tarot/devil_card",
+    "apocrypha:tarot/tower_card",
+    "apocrypha:tarot/star_card",
+    "apocrypha:tarot/moon_card",
+    "apocrypha:tarot/sun_card",
+    "apocrypha:tarot/judgement_card",
+    "apocrypha:tarot/world_card",
+    "apocrypha:tarot/card_moon",
+    "apocrypha:tarot/card_sun"
+  ]
+}
