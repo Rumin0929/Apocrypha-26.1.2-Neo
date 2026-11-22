@@ -8,6 +8,7 @@ import net.minecraft.world.clock.WorldClock;
 import net.minecraft.world.clock.WorldClocks;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.server.ServerStoppingEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 
 @EventBusSubscriber(modid = Apocrypha.MOD_ID)//明确把这个类登记在事件总线
@@ -68,5 +69,22 @@ public final class TimeController {
         }
 
 
+    }
+
+    //服务器停止时清空全部状态
+    @SubscribeEvent
+    public static void onServerStopping(ServerStoppingEvent event) {
+        MinecraftServer server = event.getServer();
+        Holder<WorldClock> clock = server.registryAccess().getOrThrow(WorldClocks.OVERWORLD);
+
+        //先把时钟恢复正常，免得加速中途退出被写进存档
+        server.clockManager().setRate(clock, 1.0F);
+        server.tickRateManager().setFrozen(false);
+
+        //再清内存里的状态
+        acceleratePriority = 0;
+        accelerateTarget = 0L;
+        pauseActiveState = false;
+        pauseDuration = 0F;
     }
 }

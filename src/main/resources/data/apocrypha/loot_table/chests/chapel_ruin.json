@@ -4,13 +4,14 @@
     {
       "rolls": {"type": "minecraft:uniform","min": 7,"max": 15},
       "entries": [
-        {"type": "minecraft:item","name": "minecraft:rotten_flesh","weight": 8,
+        {"type": "minecraft:item","name": "minecraft:rotten_flesh","weight": 8,"quality": -1,
          "functions": [{"function": "minecraft:set_count","count":{ "type":"minecraft:uniform","min": 2,"max": 4 }}]},
-        {"type": "minecraft:item","name": "minecraft:green_candle","weight": 5},
+        {"type": "minecraft:item","name": "minecraft:green_candle","weight": 5,
+          "functions": [{"function": "minecraft:set_count","count":{ "type":"minecraft:uniform","min": 1,"max": 3 }}]},
         {"type": "minecraft:item","name": "minecraft:copper_ingot","weight": 5},
         {"type": "minecraft:item","name": "minecraft:paper","weight": 5},
         {"type": "minecraft:item","name": "minecraft:diamond","weight": 3},
-        {"type": "minecraft:empty","weight": 3}
+        {"type": "minecraft:empty","weight": 5,"quality": -1}
       ]
     },
     {
@@ -29,21 +30,23 @@
     {
       "rolls": {"type": "minecraft:uniform","min": 1,"max": 3},
       "entries": [
-        {"type": "minecraft:item","name": "apocrypha:tarot/hermit_card","weight": 7,"quality": 2},
-        {"type": "minecraft:item","name": "apocrypha:tarot/moon_card","weight": 7,"quality": 2},
-        {"type": "minecraft:item","name": "apocrypha:tarot/strength_card","weight": 5,"quality": 2},
-        {"type": "minecraft:item","name": "apocrypha:tarot/fool_card","weight": 5,"quality": 2},
-        {"type": "minecraft:empty", "weight":2,"quality": -2}
+        {"type": "minecraft:item","name": "apocrypha:tarot/hermit_card","weight": 7,"quality": 1},
+        {"type": "minecraft:item","name": "apocrypha:tarot/moon_card","weight": 7,"quality": 1},
+        {"type": "minecraft:item","name": "apocrypha:tarot/strength_card","weight": 5,"quality": 1},
+        {"type": "minecraft:item","name": "apocrypha:tarot/fool_card","weight": 5,"quality": 1},
+        {"type": "minecraft:empty", "weight":2,"quality": -1}
       ]
     },
     {
       "rolls": 1,
       "bonus_rolls": 1,
       "conditions": [
-        {"condition":"minecraft:random_chance","chance": 0.5 }
+        {"condition":"minecraft:random_chance","chance": 0.4}
       ],
       "entries": [
-        {"type": "minecraft:item","name": "minecraft:enchanted_golden_apple"}
+        {"type": "minecraft:item","name": "minecraft:enchanted_golden_apple","weight": 1},
+        {"type": "minecraft:item","name": "minecraft:diamond_block","weight": 1},
+        {"type": "minecraft:item","name": "minecraft:gold_block","weight": 2}
       ]
     }
   ],

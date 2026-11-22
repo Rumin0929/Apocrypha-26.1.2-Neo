@@ -1,5 +1,6 @@
 package com.rumin.apocrypha.item;
 
+import com.rumin.apocrypha.util.DoomMarker;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -32,6 +33,8 @@ public class FoolCardItem extends Item {
                 serverPlayer.getFoodData().setSaturation(5.0F);//将饱和度设为5
                 serverPlayer.setExperiencePoints(0);//归零经验值
                 serverPlayer.setExperienceLevels(0);//归零经验等级
+
+                DoomMarker.clearMark(player);//清除可能的死亡标记
                 serverPlayer.teleport(TeleportTransition.createDefault(serverPlayer,TeleportTransition.DO_NOTHING));//传送回世界出生点
             }
 

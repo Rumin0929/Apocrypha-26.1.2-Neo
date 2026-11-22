@@ -2,12 +2,10 @@ package com.rumin.apocrypha.item;
 
 import com.rumin.apocrypha.Apocrypha;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ShovelItem;
-import net.minecraft.world.item.component.Consumables;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -32,7 +30,9 @@ public class ModItems {
     public static final DeferredItem<Item> HERMIT_CARD=ITEMS.registerItem("tarot/hermit_card",
             HermitCardItem::new,
             props->props.component(DataComponents.CONSUMABLE,ModConsumables.HERMIT_CARD).useCooldown(5.0F));
-    public static final DeferredItem<Item> WHEEL_OF_FORTUNE_CARD=ITEMS.registerSimpleItem("tarot/wheel_of_fortune_card");
+    public static final DeferredItem<Item> WHEEL_OF_FORTUNE_CARD=ITEMS.registerItem("tarot/wheel_of_fortune_card",
+            WheelOfFortuneCardItem::new,
+            props->props.component(DataComponents.CONSUMABLE,ModConsumables.WHEEL_OF_FORTUNE_CARD).useCooldown(60.0F));
     public static final DeferredItem<Item> JUSTICE_CARD=ITEMS.registerSimpleItem("tarot/justice_card");
     public static final DeferredItem<Item> HANGED_MAN_CARD=ITEMS.registerSimpleItem("tarot/hanged_man_card");
     public static final DeferredItem<Item> DEATH_CARD=ITEMS.registerSimpleItem("tarot/death_card");

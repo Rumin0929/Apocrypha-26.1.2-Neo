@@ -33,7 +33,7 @@ public class ModCreativeModeTabs {
 //                        output.accept(ModItems.CHARIOT_CARD);
                         output.accept(ModItems.STRENGTH_CARD);
                         output.accept(ModItems.HERMIT_CARD);
-//                        output.accept(ModItems.WHEEL_OF_FORTUNE_CARD);
+                        output.accept(ModItems.WHEEL_OF_FORTUNE_CARD);
 //                        output.accept(ModItems.JUSTICE_CARD);
 //                        output.accept(ModItems.HANGED_MAN_CARD);
 //                        output.accept(ModItems.DEATH_CARD);

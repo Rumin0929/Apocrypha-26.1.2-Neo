@@ -37,6 +37,14 @@ public class ModConsumables {
                     )).build();
 
     public static final Consumable HERMIT_CARD = ModConsumables.defaultTarot().build();
+
+    public static final Consumable WHEEL_OF_FORTUNE_CARD = ModConsumables.defaultTarot()
+            .onConsume(
+                    new ApplyStatusEffectsConsumeEffect(
+                            new MobEffectInstance(MobEffects.LUCK,1800*20,3)
+                    )
+            ).build();
+
     public static final Consumable MOON_CARD = ModConsumables.defaultTarot().build();
     public static final Consumable SUN_CARD = ModConsumables.defaultTarot().build();
 
