@@ -33,6 +33,7 @@ public class CardSunItem extends Item {
                 }else {
                     TimeController.accelerate(server,currentTime-currentDayTime+35834,0.2F,8);
                 }
+                server.setWeatherParameters(0,0,false,false);
             }
         }
 

@@ -38,7 +38,9 @@ public class ModItems {
     public static final DeferredItem<Item> DEATH_CARD=ITEMS.registerSimpleItem("tarot/death_card");
     public static final DeferredItem<Item> TEMPERANCE_CARD=ITEMS.registerSimpleItem("tarot/temperance_card");
     public static final DeferredItem<Item> DEVIL_CARD=ITEMS.registerSimpleItem("tarot/devil_card");
-    public static final DeferredItem<Item> TOWER_CARD=ITEMS.registerSimpleItem("tarot/tower_card");
+    public static final DeferredItem<Item> TOWER_CARD=ITEMS.registerItem("tarot/tower_card",
+            TowerCardItem::new,
+            props->props.component(DataComponents.CONSUMABLE,ModConsumables.TOWER_CARD).useCooldown(1.0F));
     public static final DeferredItem<Item> STAR_CARD=ITEMS.registerSimpleItem("tarot/star_card");
     public static final DeferredItem<Item> MOON_CARD=ITEMS.registerItem("tarot/moon_card",
             MoonCardItem::new,

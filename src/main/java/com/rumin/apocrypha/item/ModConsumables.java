@@ -22,7 +22,8 @@ public class ModConsumables {
                     new ApplyStatusEffectsConsumeEffect(
                             List.of(
                                     new MobEffectInstance(MobEffects.HEALTH_BOOST, 240 * 20, 1),
-                                    new MobEffectInstance(MobEffects.REGENERATION, 120, 3)
+                                    new MobEffectInstance(MobEffects.REGENERATION, 120, 4),
+                                    new MobEffectInstance(MobEffects.RESISTANCE,120*20,1)
                             )
                     )).build();
 
@@ -45,6 +46,7 @@ public class ModConsumables {
                     )
             ).build();
 
+    public static final Consumable TOWER_CARD = ModConsumables.defaultTarot().build();
     public static final Consumable MOON_CARD = ModConsumables.defaultTarot().build();
     public static final Consumable SUN_CARD = ModConsumables.defaultTarot().build();
 

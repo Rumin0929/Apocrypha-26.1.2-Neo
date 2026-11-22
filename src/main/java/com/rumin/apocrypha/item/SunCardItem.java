@@ -30,6 +30,7 @@ public class SunCardItem extends Item {
                 long targetTime = currentDay * 24000 + 22200;
                 if (targetTime <= currentTime) targetTime += 24000;
                 TimeController.accelerate(server, targetTime, 120,16);
+                server.setWeatherParameters(0,0,false,false);
             }
         }
 
