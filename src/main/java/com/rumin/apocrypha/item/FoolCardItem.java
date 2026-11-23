@@ -1,12 +1,10 @@
 package com.rumin.apocrypha.item;
 
-import com.rumin.apocrypha.util.DoomMarker;
-import net.minecraft.resources.Identifier;
+import com.rumin.apocrypha.util.DoomCurse;
+import com.rumin.apocrypha.util.TeleportImmortality;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.ai.attributes.AttributeInstance;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -34,7 +32,8 @@ public class FoolCardItem extends Item {
                 serverPlayer.setExperiencePoints(0);//归零经验值
                 serverPlayer.setExperienceLevels(0);//归零经验等级
 
-                DoomMarker.clearMark(player);//清除可能的死亡标记
+                DoomCurse.clearTag(player);//清除可能的死亡诅咒标记
+                TeleportImmortality.clearTag(player);//清除可能的传送无敌标记
                 serverPlayer.teleport(TeleportTransition.createDefault(serverPlayer,TeleportTransition.DO_NOTHING));//传送回世界出生点
             }
 

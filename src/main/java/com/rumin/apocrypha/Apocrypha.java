@@ -1,6 +1,7 @@
 package com.rumin.apocrypha;
 
 import com.rumin.apocrypha.block.ModBlocks;
+import com.rumin.apocrypha.effect.ModEffects;
 import com.rumin.apocrypha.item.ModCreativeModeTabs;
 import com.rumin.apocrypha.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -42,6 +43,7 @@ public class Apocrypha {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (Apocrypha) to respond directly to events.
@@ -66,6 +68,7 @@ public class Apocrypha {
     }
 
 //原版创造模式物品栏
+
 //建筑方块
     public void addCreative1(BuildCreativeModeTabContentsEvent event){
         if (event.getTabKey()==CreativeModeTabs.BUILDING_BLOCKS){
@@ -96,6 +99,10 @@ public class Apocrypha {
     public void addCreative9(BuildCreativeModeTabContentsEvent event){
         if (event.getTabKey()==CreativeModeTabs.COMBAT){
             event.accept(ModItems.SILVER_SWORD);
+            event.accept(ModItems.SILVER_HELMET);
+            event.accept(ModItems.SILVER_CHESTPLATE);
+            event.accept(ModItems.SILVER_LEGGINGS);
+            event.accept(ModItems.SILVER_BOOTS);
         }
     }
 

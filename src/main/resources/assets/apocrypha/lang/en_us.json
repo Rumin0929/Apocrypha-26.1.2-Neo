@@ -22,14 +22,22 @@
   "item.apocrypha.tarot.judgement_card": "Judgement Card (Upright)",
   "item.apocrypha.tarot.world_card": "World Card (Upright)",
 
+  "item.apocrypha.tarot.card_wheel_of_fortune": "Wheel of Fortune Card (Reversed)",
   "item.apocrypha.tarot.card_moon": "Moon Card (Reversed)",
   "item.apocrypha.tarot.card_sun": "Sun Card (Reversed)",
+
+  "item.apocrypha.wafer": "The Wafer",
 
   "item.apocrypha.silver_sword": "Silver Sword",
   "item.apocrypha.silver_pickaxe": "Silver Pickaxe",
   "item.apocrypha.silver_axe": "Silver Axe",
   "item.apocrypha.silver_hoe": "Silver Hoe",
   "item.apocrypha.silver_shovel": "Silver Shovel",
+
+  "item.apocrypha.silver_helmet": "Silver Helmet",
+  "item.apocrypha.silver_chestplate": "Silver Chestplate",
+  "item.apocrypha.silver_leggings": "Silver Leggings",
+  "item.apocrypha.silver_boots": "Silver Boots",
 
 
 
@@ -42,10 +50,13 @@
   "block.apocrypha.deepslate_silver_ore": "Deepslate Sliver Ore",
   "block.apocrypha.raw_silver_block": "Block of Raw Sliver",
 
+  "effect.apocrypha.wafer": "The Wafer",
 
-  "itemGroup.apocrypha": "Tarot",
 
-  "death.attack.wheel_of_fortune_card": "Destined death",
+  "itemGroup1.apocrypha": "Tarot",
+  "itemGroup2.apocrypha": "Relic",
+
+  "death.attack.destined_death": "Destined death",
 
 
 

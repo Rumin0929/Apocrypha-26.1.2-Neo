@@ -18,7 +18,7 @@ public class ModCreativeModeTabs {
 //    塔罗物品栏
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAROT_TAB =
             CREATIVE_MODE_TABS.register("tarot_tab", () -> CreativeModeTab.builder()
-                    .title(Component.translatable("itemGroup.apocrypha"))
+                    .title(Component.translatable("itemGroup1.apocrypha"))
                     .withTabsBefore(CreativeModeTabs.COMBAT)//不生效，但可以把COMBAT换成别的模组物品栏使其在该物品栏之前,格式参下
                     .icon(() -> new ItemStack(ModItems.FOOL_CARD.get()))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -46,9 +46,20 @@ public class ModCreativeModeTabs {
 //                        output.accept(ModItems.JUDGEMENT_CARD);
 //                        output.accept(ModItems.WORLD_CARD);
 
+                        output.accept(ModItems.CARD_WHEEL_OF_FORTUNE);
                         output.accept(ModItems.CARD_MOON);
                         output.accept(ModItems.CARD_SUN);
 
+
+                    }).build());
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RELIC_TAB =
+            CREATIVE_MODE_TABS.register("relic", () -> CreativeModeTab.builder()
+                    .title(Component.translatable("itemGroup2.apocrypha"))
+                    .withTabsBefore(TAROT_TAB.getId())
+                    .icon(() -> new ItemStack(ModItems.WAFER.get()))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.WAFER);
 
                     }).build());
 

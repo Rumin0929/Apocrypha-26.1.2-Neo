@@ -22,6 +22,7 @@
     "apocrypha:tarot/sun_card",
     "apocrypha:tarot/judgement_card",
     "apocrypha:tarot/world_card",
+    "apocrypha:tarot/card_wheel_of_fortune",
     "apocrypha:tarot/card_moon",
     "apocrypha:tarot/card_sun"
   ]

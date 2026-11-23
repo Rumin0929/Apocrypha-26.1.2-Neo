@@ -6,6 +6,7 @@ import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -52,6 +53,9 @@ public class ModItems {
     public static final DeferredItem<Item> WORLD_CARD=ITEMS.registerSimpleItem("tarot/world_card");
 
 //    逆位塔罗牌
+    public static final DeferredItem<Item> CARD_WHEEL_OF_FORTUNE=ITEMS.registerItem("tarot/card_wheel_of_fortune",
+        CardWheelOfFortuneCard::new,
+        props->props.component(DataComponents.CONSUMABLE,ModConsumables.CARD_WHEEL_OF_FORTUNE_CARD).useCooldown(60.0F));
     public static final DeferredItem<Item> CARD_MOON=ITEMS.registerItem("tarot/card_moon",
         CardMoonItem::new,
         props->props.component(DataComponents.CONSUMABLE,ModConsumables.CARD_MOON).useCooldown(1.0F));
@@ -76,6 +80,20 @@ public class ModItems {
     public static final DeferredItem<Item> SILVER_HOE=ITEMS.registerItem("silver_hoe",
             p->new HoeItem(ModToolMaterials.SILVER,-2.0F,-1.0F,p));
 
+//    盔甲
+    public static final DeferredItem<Item> SILVER_HELMET = ITEMS.registerItem("silver_helmet",
+        p -> new Item(p.humanoidArmor(ModArmorMaterials.SILVER, ArmorType.HELMET)));
+    public static final DeferredItem<Item> SILVER_CHESTPLATE = ITEMS.registerItem("silver_chestplate",
+            p -> new Item(p.humanoidArmor(ModArmorMaterials.SILVER, ArmorType.CHESTPLATE)));
+    public static final DeferredItem<Item> SILVER_LEGGINGS = ITEMS.registerItem("silver_leggings",
+            p -> new Item(p.humanoidArmor(ModArmorMaterials.SILVER, ArmorType.LEGGINGS)));
+    public static final DeferredItem<Item> SILVER_BOOTS = ITEMS.registerItem("silver_boots",
+            p ->new Item(p.humanoidArmor(ModArmorMaterials.SILVER, ArmorType.BOOTS)));
+
+
+
+    public static final DeferredItem<Item> WAFER=ITEMS.registerSimpleItem("wafer",
+            ()->new Item.Properties().component(DataComponents.CONSUMABLE,ModConsumables.WAFER).useCooldown(3.0F));
 
 
     public static void register(IEventBus eventBus){

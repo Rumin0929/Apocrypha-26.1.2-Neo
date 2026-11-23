@@ -1,5 +1,6 @@
 package com.rumin.apocrypha.item;
 
+import com.rumin.apocrypha.effect.ModEffects;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -50,11 +51,24 @@ public class ModConsumables {
     public static final Consumable MOON_CARD = ModConsumables.defaultTarot().build();
     public static final Consumable SUN_CARD = ModConsumables.defaultTarot().build();
 
+    public static final Consumable CARD_WHEEL_OF_FORTUNE_CARD = ModConsumables.defaultTarot().build();
     public static final Consumable CARD_MOON = ModConsumables.defaultTarot().build();
     public static final Consumable CARD_SUN = ModConsumables.defaultTarot().build();
 
+
+    public static final Consumable WAFER=ModConsumables.defaultRelic()
+        .onConsume(
+                new ApplyStatusEffectsConsumeEffect(
+                        new MobEffectInstance(ModEffects.WAFER,-1,0,false,false,false))
+        ).build();
+
+
     public static Consumable.Builder defaultTarot() {
         return Consumable.builder().consumeSeconds(0F).animation(ItemUseAnimation.NONE).sound(BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.BOOK_PAGE_TURN)).hasConsumeParticles(false);
+    }
+
+    public static Consumable.Builder defaultRelic() {
+        return Consumable.builder().consumeSeconds(0F).animation(ItemUseAnimation.NONE).sound(SoundEvents.TRIDENT_THUNDER).hasConsumeParticles(false);
     }
 
 

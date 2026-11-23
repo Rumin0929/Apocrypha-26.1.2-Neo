@@ -18,22 +18,22 @@ import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 
 @EventBusSubscriber(modid = Apocrypha.MOD_ID)
-public class DoomMarker {
+public class DoomCurse {
 
     private static final String PREFIX = "apocrypha:doom_";
-    private static final int[] warningHurtTick = {10, 40, 70, 90, 110, 120, 130, 135};
+    private static final int[] WARNING_HURT_TICKS = {10, 40, 70, 90, 110, 120, 130, 135};
 
 
     //做标记以及是否成功打上标记
-    public static boolean markDoomWithOutcome(Player player, long deadline) {
-        if (getDeadline(player)>=0)return false;
-        clearMark(player);
-        player.addTag(PREFIX + deadline);
+    public static boolean trySetTag(Player player, long doomTime) {
+        if (getDoomTime(player)>=0)return false;
+        clearTag(player);
+        player.addTag(PREFIX + doomTime);
         return true;
     }
 
     //获取死亡时间
-    public static long getDeadline(Player player) {
+    public static long getDoomTime(Player player) {
         for (String tag : player.entityTags()) {
             if (tag.startsWith(PREFIX)) {
                 try {
@@ -47,45 +47,45 @@ public class DoomMarker {
     }
 
     //清除标记
-    public static void clearMark(Player player) {
+    public static void clearTag(Player player) {
         player.entityTags().removeIf(tag -> tag.startsWith(PREFIX));
     }
 
     @SubscribeEvent
-    public static void deathJudgement(ServerTickEvent.Post event) {
+    public static void executeDoom(ServerTickEvent.Post event) {
         MinecraftServer server = event.getServer();
         Holder<WorldClock> clock = server.registryAccess().getOrThrow(WorldClocks.OVERWORLD);
         long currentTime = server.clockManager().getTotalTicks(clock);
 
-        for (ServerPlayer sp : server.getPlayerList().getPlayers()) {
-            long deadline = getDeadline(sp);
-            if (deadline < 0 || currentTime < deadline) continue;
+        for (ServerPlayer serverPlayer : server.getPlayerList().getPlayers()) {
+            long doomTime = getDoomTime(serverPlayer);
+            if (doomTime < 0 || currentTime < doomTime) continue;
 
-            Holder<DamageType> type = sp.level().registryAccess()
+            Holder<DamageType> type = serverPlayer.level().registryAccess()
                     .lookupOrThrow(Registries.DAMAGE_TYPE)
                     .getOrThrow(ResourceKey.create(
                             Registries.DAMAGE_TYPE,
-                            Identifier.fromNamespaceAndPath("apocrypha", "wheel_of_fortune_card")));
+                            Identifier.fromNamespaceAndPath("apocrypha", "destined_death")));
 
-            for (int j : warningHurtTick) {
-                if (currentTime == deadline + j) {
-                    sp.hurtServer(sp.level(), new DamageSource(type), 1.0F);
+            for (int j : WARNING_HURT_TICKS) {
+                if (currentTime == doomTime + j) {
+                    serverPlayer.hurtServer(serverPlayer.level(), new DamageSource(type), 1.0F);
                 }
             }
 
-            if (currentTime >= deadline + 140) {
-                clearMark(sp);
-                sp.hurtServer(sp.level(), new DamageSource(type), Float.MAX_VALUE);
+            if (currentTime >= doomTime + 140) {
+                clearTag(serverPlayer);
+                serverPlayer.hurtServer(serverPlayer.level(), new DamageSource(type), Float.MAX_VALUE);
             }
         }
     }
 
     @SubscribeEvent
     public static void onDeath(LivingDeathEvent event) {
-        if (!(event.getEntity() instanceof ServerPlayer sp)) return;
+        if (!(event.getEntity() instanceof ServerPlayer serverPlayer)) return;
 
-        DoomMarker.clearMark(sp);
+        DoomCurse.clearTag(serverPlayer);
+        TeleportImmortality.clearTag(serverPlayer);
     }
-
 
 }

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "apocrypha:silver"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "apocrypha:silver"
+      }
+    ]
+  }
+}

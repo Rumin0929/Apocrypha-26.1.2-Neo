@@ -46,6 +46,17 @@
         {"type": "minecraft:item","name": "apocrypha:tarot/moon_card","weight": 8},
         {"type": "minecraft:item","name": "apocrypha:tarot/hermit_card","weight": 6}
         ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "conditions":[
+        {"condition":"minecraft:random_chance","chance": 0.01 }
+      ],
+      "entries": [
+        {"type": "minecraft:item","name": "apocrypha:wafer","weight": 1},
+        {"type": "minecraft:empty","weight": 99}
+      ]
     }
   ],
   "random_sequence": "apocrypha:chests/chapel"

@@ -22,14 +22,23 @@
   "item.apocrypha.tarot.judgement_card":"正·审判卡",
   "item.apocrypha.tarot.world_card": "正·世界卡",
 
+  "item.apocrypha.tarot.card_wheel_of_fortune": "倒·命运之轮卡",
   "item.apocrypha.tarot.card_moon":"倒·月亮卡",
   "item.apocrypha.tarot.card_sun": "倒·太阳卡",
+
+  "item.apocrypha.wafer":"圣饼",
 
   "item.apocrypha.silver_sword": "银剑",
   "item.apocrypha.silver_pickaxe": "银镐",
   "item.apocrypha.silver_axe": "银斧",
   "item.apocrypha.silver_hoe": "银锄",
   "item.apocrypha.silver_shovel": "银锹",
+
+  "item.apocrypha.silver_helmet": "银头盔",
+  "item.apocrypha.silver_chestplate": "银胸甲",
+  "item.apocrypha.silver_leggings": "银护腿",
+  "item.apocrypha.silver_boots": "银靴子",
+
 
 
   "item.apocrypha.emerald_shard":"绿宝石碎片",
@@ -42,8 +51,11 @@
   "block.apocrypha.deepslate_silver_ore":"深层银矿石",
   "block.apocrypha.raw_silver_block":"粗银块",
 
+  "effect.apocrypha.wafer":"圣饼",
 
-  "itemGroup.apocrypha":"塔罗",
 
-  "death.attack.wheel_of_fortune_card": "命中注定的死亡"
+  "itemGroup1.apocrypha":"塔罗",
+  "itemGroup2.apocrypha":"圣遗物",
+
+  "death.attack.destined_death": "命中注定的死亡"
 }
