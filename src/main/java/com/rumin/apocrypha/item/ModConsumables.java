@@ -1,10 +1,11 @@
 package com.rumin.apocrypha.item;
 
-import com.rumin.apocrypha.effect.ModEffects;
+import com.rumin.apocrypha.effect.ApocryphaModEffects;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.item.ItemUseAnimation;
 import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
@@ -22,11 +23,21 @@ public class ModConsumables {
             .onConsume(
                     new ApplyStatusEffectsConsumeEffect(
                             List.of(
-                                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 240 * 20, 1),
-                                    new MobEffectInstance(MobEffects.REGENERATION, 120, 4),
-                                    new MobEffectInstance(MobEffects.RESISTANCE,120*20,1)
+                                    new MobEffectInstance(ApocryphaModEffects.INVULNERABLE,140,0),
+                                    new MobEffectInstance(ApocryphaModEffects.NONAGGRESSION,140,0)
                             )
                     )).build();
+
+    public static final Consumable CHARIOT_CARD=ModConsumables.defaultTarot()
+            .onConsume(
+                    new ApplyStatusEffectsConsumeEffect(
+                            List.of(
+                                    new MobEffectInstance(MobEffects.SPEED,2400,31),
+                                    new MobEffectInstance(MobEffects.JUMP_BOOST,2400,2),
+                                    new MobEffectInstance(ApocryphaModEffects.NONAGGRESSION,2400,0)
+                            )
+                    )
+            ).build();
 
     public static final Consumable STRENGTH_CARD = ModConsumables.defaultTarot()
             .onConsume(
@@ -59,7 +70,7 @@ public class ModConsumables {
     public static final Consumable WAFER=ModConsumables.defaultRelic()
         .onConsume(
                 new ApplyStatusEffectsConsumeEffect(
-                        new MobEffectInstance(ModEffects.WAFER,-1,0,false,false,false))
+                        new MobEffectInstance(ApocryphaModEffects.WAFER,-1,0,false,false,false))
         ).build();
 
 

@@ -1,7 +1,7 @@
 package com.rumin.apocrypha.item;
 
 import com.rumin.apocrypha.util.DoomCurse;
-import com.rumin.apocrypha.util.TeleportImmortality;
+import com.rumin.apocrypha.util.TeleportInvulnerability;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -33,7 +33,7 @@ public class FoolCardItem extends Item {
                 serverPlayer.setExperienceLevels(0);//归零经验等级
 
                 DoomCurse.clearTag(player);//清除可能的死亡诅咒标记
-                TeleportImmortality.clearTag(player);//清除可能的传送无敌标记
+                TeleportInvulnerability.clearTag(player);//清除可能的传送无敌标记
                 serverPlayer.teleport(TeleportTransition.createDefault(serverPlayer,TeleportTransition.DO_NOTHING));//传送回世界出生点
             }
 

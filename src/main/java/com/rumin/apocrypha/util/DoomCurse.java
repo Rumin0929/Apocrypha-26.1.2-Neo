@@ -85,7 +85,7 @@ public class DoomCurse {
         if (!(event.getEntity() instanceof ServerPlayer serverPlayer)) return;
 
         DoomCurse.clearTag(serverPlayer);
-        TeleportImmortality.clearTag(serverPlayer);
+        TeleportInvulnerability.clearTag(serverPlayer);
     }
 
 }

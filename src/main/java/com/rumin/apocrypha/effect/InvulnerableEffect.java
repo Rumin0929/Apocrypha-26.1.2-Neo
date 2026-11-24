@@ -1,0 +1,25 @@
+package com.rumin.apocrypha.effect;
+
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.tags.DamageTypeTags;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectCategory;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
+
+@EventBusSubscriber
+public class InvulnerableEffect extends MobEffect {
+    public InvulnerableEffect(MobEffectCategory category, int color) {
+        super(category, color);
+    }
+
+    @SubscribeEvent
+    public static void invulnerability(LivingIncomingDamageEvent event){
+        if (!(event.getEntity() instanceof ServerPlayer serverPlayer))return;
+        if (event.getSource().is(DamageTypeTags.BYPASSES_INVULNERABILITY))return;
+        if (serverPlayer.hasEffect(ApocryphaModEffects.INVULNERABLE)){
+            event.setCanceled(true);
+        }
+    }
+}

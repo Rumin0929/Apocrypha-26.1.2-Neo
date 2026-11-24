@@ -1,7 +1,7 @@
 package com.rumin.apocrypha.item;
 
 import com.rumin.apocrypha.util.DoomCurse;
-import com.rumin.apocrypha.util.TeleportImmortality;
+import com.rumin.apocrypha.util.TeleportInvulnerability;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
@@ -37,7 +37,7 @@ public class WheelOfFortuneCardItem extends Item {
                 long doomTime =currentTime+aliveTime;
                 boolean outcome = DoomCurse.trySetTag(player, doomTime);
                 if (outcome){
-                    TeleportImmortality.clearTag(player);
+                    TeleportInvulnerability.clearTag(player);
                     player.sendSystemMessage(Component.literal
                             ("你将在"+(aliveTime/20/60+1)+"分钟内死亡，请享受剩余的生命，或许你可以提前了断？")
                             .withStyle(ChatFormatting.RED));

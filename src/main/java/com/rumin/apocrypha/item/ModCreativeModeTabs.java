@@ -30,7 +30,7 @@ public class ModCreativeModeTabs {
 //                        output.accept(ModItems.EMPEROR_CARD);
                         output.accept(ModItems.HIEROPHANT_CARD);
 //                        output.accept(ModItems.LOVERS_CARD);
-//                        output.accept(ModItems.CHARIOT_CARD);
+                        output.accept(ModItems.CHARIOT_CARD);
                         output.accept(ModItems.STRENGTH_CARD);
                         output.accept(ModItems.HERMIT_CARD);
                         output.accept(ModItems.WHEEL_OF_FORTUNE_CARD);

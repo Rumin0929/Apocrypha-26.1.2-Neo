@@ -14,12 +14,16 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 @EventBusSubscriber(modid=Apocrypha.MOD_ID)
-public class ModEffects{
+public class ApocryphaModEffects {
     public static final DeferredRegister<MobEffect> EFFECTS=
             DeferredRegister.create(Registries.MOB_EFFECT, Apocrypha.MOD_ID);
 
     public static final DeferredHolder<MobEffect,MobEffect> WAFER=
             EFFECTS.register("wafer",()->new MobEffect(MobEffectCategory.NEUTRAL,15526857){});
+    public static final DeferredHolder<MobEffect,MobEffect> INVULNERABLE=
+            EFFECTS.register("invulnerable",()->new MobEffect(MobEffectCategory.BENEFICIAL,16766720){});
+    public static final DeferredHolder<MobEffect,MobEffect> NONAGGRESSION=
+            EFFECTS.register("nonaggression",()->new MobEffect(MobEffectCategory.HARMFUL,7043727){});
 
 
 

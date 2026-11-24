@@ -16,7 +16,7 @@ public class WaferEffect extends MobEffect {
     @SubscribeEvent
     public static void waferResistance(LivingIncomingDamageEvent event){
         if (!(event.getEntity() instanceof ServerPlayer serverPlayer))return;
-        if (serverPlayer.hasEffect(ModEffects.WAFER)) {
+        if (serverPlayer.hasEffect(ApocryphaModEffects.WAFER)) {
             event.setAmount(event.getOriginalAmount() * 0.5F);
         }
     }

@@ -1,7 +1,7 @@
 package com.rumin.apocrypha.item;
 
 import com.rumin.apocrypha.util.DoomCurse;
-import com.rumin.apocrypha.util.TeleportImmortality;
+import com.rumin.apocrypha.util.TeleportInvulnerability;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
@@ -34,7 +34,7 @@ public class CardWheelOfFortuneCard extends Item {
                 Random r=new Random();
                 long aliveTime=r.nextLong(7200,12001);
                 long doomTime =currentTime+aliveTime;
-                TeleportImmortality.setTag(player);
+                TeleportInvulnerability.setTag(player);
                 boolean outcome= DoomCurse.trySetTag(player, doomTime);
                 if (outcome){
                     player.sendSystemMessage(Component.literal
