@@ -33,7 +33,6 @@
         {"type": "minecraft:item","name": "apocrypha:tarot/hermit_card","weight": 7,"quality": 1},
         {"type": "minecraft:item","name": "apocrypha:tarot/moon_card","weight": 7,"quality": 1},
         {"type": "minecraft:item","name": "apocrypha:tarot/strength_card","weight": 5,"quality": 1},
-        {"type": "minecraft:item","name": "apocrypha:tarot/fool_card","weight": 5,"quality": 1},
         {"type": "minecraft:empty", "weight":2,"quality": -1}
       ]
     },

@@ -51,8 +51,9 @@
   "block.apocrypha.raw_silver_block": "Block of Raw Silver",
 
   "effect.apocrypha.wafer": "The Wafer",
-  "effect.apocrypha.invulnerable": "Invulnerable",
-  "effect.apocrypha.nonaggression": "Nonaggression",
+  "effect.apocrypha.invulnerability": "Invulnerability",
+  "effect.apocrypha.hemophobia": "Hemophobia",
+  "effect.apocrypha.ghost": "Ghost",
 
 
   "itemGroup1.apocrypha": "Tarot",

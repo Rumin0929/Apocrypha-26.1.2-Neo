@@ -1,0 +1,26 @@
+{
+  "values": [
+    "minecraft:fall",
+    "minecraft:ender_pearl",
+    "minecraft:fly_into_wall",
+    "minecraft:starve",
+    "minecraft:in_wall",
+    "minecraft:cramming",
+    "minecraft:freeze",
+    "minecraft:drown",
+    "minecraft:in_fire",
+    "minecraft:on_fire",
+    "minecraft:lava",
+    "minecraft:campfire",
+    "minecraft:hot_floor",
+    "minecraft:cactus",
+    "minecraft:sweet_berry_bush",
+    "minecraft:stalagmite",
+    "minecraft:falling_anvil",
+    "minecraft:falling_block",
+    "minecraft:falling_stalactite",
+    "minecraft:outside_border",
+    "minecraft:fireworks",
+    "minecraft:thorns"
+  ]
+}

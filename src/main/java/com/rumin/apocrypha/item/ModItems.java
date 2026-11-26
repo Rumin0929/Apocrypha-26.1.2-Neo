@@ -1,6 +1,7 @@
 package com.rumin.apocrypha.item;
 
 import com.rumin.apocrypha.Apocrypha;
+import com.rumin.apocrypha.item.tarot_card.*;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
@@ -37,7 +38,9 @@ public class ModItems {
             props->props.component(DataComponents.CONSUMABLE,ModConsumables.WHEEL_OF_FORTUNE_CARD).useCooldown(60.0F));
     public static final DeferredItem<Item> JUSTICE_CARD=ITEMS.registerSimpleItem("tarot/justice_card");
     public static final DeferredItem<Item> HANGED_MAN_CARD=ITEMS.registerSimpleItem("tarot/hanged_man_card");
-    public static final DeferredItem<Item> DEATH_CARD=ITEMS.registerSimpleItem("tarot/death_card");
+    public static final DeferredItem<Item> DEATH_CARD=ITEMS.registerItem("tarot/death_card",
+            DeathCardItem::new,
+    props->props.component(DataComponents.CONSUMABLE,ModConsumables.DEATH_CARD).useCooldown(5.0F));
     public static final DeferredItem<Item> TEMPERANCE_CARD=ITEMS.registerSimpleItem("tarot/temperance_card");
     public static final DeferredItem<Item> DEVIL_CARD=ITEMS.registerSimpleItem("tarot/devil_card");
     public static final DeferredItem<Item> TOWER_CARD=ITEMS.registerItem("tarot/tower_card",
@@ -55,7 +58,7 @@ public class ModItems {
 
 //    逆位塔罗牌
     public static final DeferredItem<Item> CARD_WHEEL_OF_FORTUNE=ITEMS.registerItem("tarot/card_wheel_of_fortune",
-        CardWheelOfFortuneCard::new,
+        CardWheelOfFortuneItem::new,
         props->props.component(DataComponents.CONSUMABLE,ModConsumables.CARD_WHEEL_OF_FORTUNE_CARD).useCooldown(60.0F));
     public static final DeferredItem<Item> CARD_MOON=ITEMS.registerItem("tarot/card_moon",
         CardMoonItem::new,

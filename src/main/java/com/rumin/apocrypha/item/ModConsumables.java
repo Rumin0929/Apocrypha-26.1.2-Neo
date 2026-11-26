@@ -5,7 +5,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.item.ItemUseAnimation;
 import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
@@ -23,8 +22,8 @@ public class ModConsumables {
             .onConsume(
                     new ApplyStatusEffectsConsumeEffect(
                             List.of(
-                                    new MobEffectInstance(ApocryphaModEffects.INVULNERABLE,140,0),
-                                    new MobEffectInstance(ApocryphaModEffects.NONAGGRESSION,140,0)
+                                    new MobEffectInstance(ApocryphaModEffects.INVULNERABILITY,140,0),
+                                    new MobEffectInstance(ApocryphaModEffects.HEMOPHOBIA,140,0)
                             )
                     )).build();
 
@@ -34,7 +33,7 @@ public class ModConsumables {
                             List.of(
                                     new MobEffectInstance(MobEffects.SPEED,2400,31),
                                     new MobEffectInstance(MobEffects.JUMP_BOOST,2400,2),
-                                    new MobEffectInstance(ApocryphaModEffects.NONAGGRESSION,2400,0)
+                                    new MobEffectInstance(ApocryphaModEffects.HEMOPHOBIA,2400,0)
                             )
                     )
             ).build();
@@ -55,6 +54,13 @@ public class ModConsumables {
             .onConsume(
                     new ApplyStatusEffectsConsumeEffect(
                             new MobEffectInstance(MobEffects.LUCK,1800*20,3)
+                    )
+            ).build();
+
+    public static final Consumable DEATH_CARD=ModConsumables.defaultTarot()
+            .onConsume(
+                    new ApplyStatusEffectsConsumeEffect(
+                            new MobEffectInstance(ApocryphaModEffects.GHOST,1200*20,0,false,true)
                     )
             ).build();
 

@@ -52,8 +52,9 @@
   "block.apocrypha.raw_silver_block":"粗银块",
 
   "effect.apocrypha.wafer":"圣饼",
-  "effect.apocrypha.invulnerable": "无敌",
-  "effect.apocrypha.nonaggression": "非攻",
+  "effect.apocrypha.invulnerability": "无敌",
+  "effect.apocrypha.hemophobia": "恐血",
+  "effect.apocrypha.ghost":"幽灵",
 
 
   "itemGroup1.apocrypha":"塔罗",

@@ -1,5 +1,6 @@
-package com.rumin.apocrypha.item;
+package com.rumin.apocrypha.item.tarot_card;
 
+import com.rumin.apocrypha.effect.ApocryphaModEffects;
 import com.rumin.apocrypha.util.DoomCurse;
 import com.rumin.apocrypha.util.TeleportInvulnerability;
 import net.minecraft.server.level.ServerPlayer;
@@ -32,6 +33,7 @@ public class FoolCardItem extends Item {
                 serverPlayer.setExperiencePoints(0);//归零经验值
                 serverPlayer.setExperienceLevels(0);//归零经验等级
 
+                ApocryphaModEffects.removeAllIrremovable(serverPlayer);//清除所有状态效果
                 DoomCurse.clearTag(player);//清除可能的死亡诅咒标记
                 TeleportInvulnerability.clearTag(player);//清除可能的传送无敌标记
                 serverPlayer.teleport(TeleportTransition.createDefault(serverPlayer,TeleportTransition.DO_NOTHING));//传送回世界出生点

@@ -1,4 +1,4 @@
-package com.rumin.apocrypha.item;
+package com.rumin.apocrypha.item.tarot_card;
 
 import com.rumin.apocrypha.util.DoomCurse;
 import com.rumin.apocrypha.util.TeleportInvulnerability;

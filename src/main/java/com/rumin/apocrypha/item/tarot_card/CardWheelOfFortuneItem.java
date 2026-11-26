@@ -1,4 +1,4 @@
-package com.rumin.apocrypha.item;
+package com.rumin.apocrypha.item.tarot_card;
 
 import com.rumin.apocrypha.util.DoomCurse;
 import com.rumin.apocrypha.util.TeleportInvulnerability;
@@ -18,8 +18,8 @@ import net.minecraft.world.level.Level;
 
 import java.util.Random;
 
-public class CardWheelOfFortuneCard extends Item {
-    public CardWheelOfFortuneCard (Properties properties){
+public class CardWheelOfFortuneItem extends Item {
+    public CardWheelOfFortuneItem(Properties properties){
         super(properties);
     }
 

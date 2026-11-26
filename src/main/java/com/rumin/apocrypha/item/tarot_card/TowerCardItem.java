@@ -1,4 +1,4 @@
-package com.rumin.apocrypha.item;
+package com.rumin.apocrypha.item.tarot_card;
 
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.InteractionHand;
