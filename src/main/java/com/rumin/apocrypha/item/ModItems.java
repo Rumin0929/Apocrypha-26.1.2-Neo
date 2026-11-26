@@ -23,8 +23,9 @@ public class ModItems {
     public static final DeferredItem<Item> HIGH_PRIESTESS_CARD=ITEMS.registerSimpleItem("tarot/high_priestess_card");
     public static final DeferredItem<Item> EMPRESS_CARD=ITEMS.registerSimpleItem("tarot/empress_card");
     public static final DeferredItem<Item> EMPEROR_CARD=ITEMS.registerSimpleItem("tarot/emperor_card");
-    public static final DeferredItem<Item> HIEROPHANT_CARD=ITEMS.registerSimpleItem("tarot/hierophant_card",
-            ()->new Item.Properties().component(DataComponents.CONSUMABLE, ModConsumables.HIEROPHANT_CARD).useCooldown(6.0F));
+    public static final DeferredItem<Item> HIEROPHANT_CARD=ITEMS.registerItem("tarot/hierophant_card",
+            HierophantCardItem::new,
+            props->props.component(DataComponents.CONSUMABLE, ModConsumables.HIEROPHANT_CARD).useCooldown(6.0F));
     public static final DeferredItem<Item> LOVERS_CARD=ITEMS.registerSimpleItem("tarot/lovers_card");
     public static final DeferredItem<Item> CHARIOT_CARD=ITEMS.registerSimpleItem("tarot/chariot_card",
             ()->new Item.Properties().component(DataComponents.CONSUMABLE,ModConsumables.CHARIOT_CARD).useCooldown(1.0F));

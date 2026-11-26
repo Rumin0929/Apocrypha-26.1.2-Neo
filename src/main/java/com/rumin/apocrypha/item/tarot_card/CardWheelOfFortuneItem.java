@@ -23,6 +23,7 @@ public class CardWheelOfFortuneItem extends Item {
         super(properties);
     }
 
+    @Override
     public InteractionResult use(Level level, Player player, InteractionHand hand){
         InteractionResult result=super.use(level, player, hand);
 

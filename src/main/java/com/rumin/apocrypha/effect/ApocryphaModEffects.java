@@ -28,11 +28,11 @@ public class ApocryphaModEffects {
             DeferredRegister.create(Registries.MOB_EFFECT, Apocrypha.MOD_ID);
 
     public static final DeferredHolder<MobEffect,MobEffect> WAFER=
-            EFFECTS.register("wafer",()->new MobEffect(MobEffectCategory.NEUTRAL,15526857){});
+            EFFECTS.register("wafer",()->new WaferEffect(MobEffectCategory.NEUTRAL,15526857));
     public static final DeferredHolder<MobEffect,MobEffect> INVULNERABILITY =
-            EFFECTS.register("invulnerability",()->new MobEffect(MobEffectCategory.BENEFICIAL,16766720){});
+            EFFECTS.register("invulnerability",()->new InvulnerabilityEffect(MobEffectCategory.BENEFICIAL,16766720));
     public static final DeferredHolder<MobEffect,MobEffect> HEMOPHOBIA =
-            EFFECTS.register("hemophobia",()->new MobEffect(MobEffectCategory.HARMFUL,7043727){});
+            EFFECTS.register("hemophobia",()->new HemophobiaEffect(MobEffectCategory.HARMFUL,7043727));
     public static final DeferredHolder<MobEffect, MobEffect> GHOST =
             EFFECTS.register("ghost", () -> new MobEffect(MobEffectCategory.NEUTRAL, 2367022) {
                 {

@@ -80,8 +80,7 @@ public class DoomCurse {
         }
     }
 
-    @SubscribeEvent
-    public static void onDeath(LivingDeathEvent event) {
+    public static void deathHandler(LivingDeathEvent event) {
         if (!(event.getEntity() instanceof ServerPlayer serverPlayer)) return;
 
         DoomCurse.clearTag(serverPlayer);

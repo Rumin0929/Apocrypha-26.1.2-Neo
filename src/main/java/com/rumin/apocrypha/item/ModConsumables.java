@@ -18,14 +18,7 @@ public class ModConsumables {
                     new ClearAllStatusEffectsConsumeEffect()
             ).build();
 
-    public static final Consumable HIEROPHANT_CARD = ModConsumables.defaultTarot()
-            .onConsume(
-                    new ApplyStatusEffectsConsumeEffect(
-                            List.of(
-                                    new MobEffectInstance(ApocryphaModEffects.INVULNERABILITY,140,0),
-                                    new MobEffectInstance(ApocryphaModEffects.HEMOPHOBIA,140,0)
-                            )
-                    )).build();
+    public static final Consumable HIEROPHANT_CARD = ModConsumables.defaultTarot().build();
 
     public static final Consumable CHARIOT_CARD=ModConsumables.defaultTarot()
             .onConsume(
