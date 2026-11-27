@@ -27,6 +27,10 @@
   "item.apocrypha.tarot.card_sun": "倒·太阳卡",
 
   "item.apocrypha.wafer":"圣饼",
+  "item.apocrypha.eternal_heart": "永恒之心",
+
+  "effect.apocrypha.wafer":"圣饼",
+  "effect.apocrypha.eternal_heart": "永恒之心",
 
   "item.apocrypha.silver_sword": "银剑",
   "item.apocrypha.silver_pickaxe": "银镐",
@@ -51,10 +55,11 @@
   "block.apocrypha.deepslate_silver_ore":"深层银矿石",
   "block.apocrypha.raw_silver_block":"粗银块",
 
-  "effect.apocrypha.wafer":"圣饼",
   "effect.apocrypha.invulnerability": "无敌",
   "effect.apocrypha.hemophobia": "恐血",
   "effect.apocrypha.ghost":"幽灵",
+  "effect.apocrypha.insight": "洞察",
+
 
 
   "itemGroup1.apocrypha":"塔罗",

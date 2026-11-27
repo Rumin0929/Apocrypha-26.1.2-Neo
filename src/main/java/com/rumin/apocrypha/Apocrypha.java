@@ -2,6 +2,7 @@ package com.rumin.apocrypha;
 
 import com.rumin.apocrypha.block.ModBlocks;
 import com.rumin.apocrypha.effect.ApocryphaModEffects;
+import com.rumin.apocrypha.entity.ModEntities;
 import com.rumin.apocrypha.item.ModCreativeModeTabs;
 import com.rumin.apocrypha.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -40,10 +41,12 @@ public class Apocrypha {
         modEventBus.addListener(this::addCreative8);
         modEventBus.addListener(this::addCreative9);
         modEventBus.addListener(this::addCreative11);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         ApocryphaModEffects.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (Apocrypha) to respond directly to events.

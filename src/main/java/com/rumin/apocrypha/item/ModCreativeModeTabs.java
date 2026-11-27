@@ -22,10 +22,9 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(CreativeModeTabs.COMBAT)//不生效，但可以把COMBAT换成别的模组物品栏使其在该物品栏之前,格式参下
                     .icon(() -> new ItemStack(ModItems.FOOL_CARD.get()))
                     .displayItems((itemDisplayParameters, output) -> {
-//                        暂时没有实际功能的卡牌被隐藏起来
                         output.accept(ModItems.FOOL_CARD);
 //                        output.accept(ModItems.MAGICIAN_CARD);
-//                        output.accept(ModItems.HIGH_PRIESTESS_CARD);
+                        output.accept(ModItems.HIGH_PRIESTESS_CARD);
 //                        output.accept(ModItems.EMPRESS_CARD);
 //                        output.accept(ModItems.EMPEROR_CARD);
                         output.accept(ModItems.HIEROPHANT_CARD);
@@ -60,20 +59,11 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.WAFER.get()))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.WAFER);
+                        output.accept(ModItems.ETERNAL_HEART);
 
                     }).build());
 
-    /*public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAROT_TAB2 =
-            CREATIVE_MODE_TABS.register("tarot_tab2", () -> CreativeModeTab.builder()
-                    .title(Component.translatable("itemGroup.apocrypha2"))
-                    .withTabsBefore(TAROT_TAB.getId())
-                    .icon(() -> new ItemStack(ModItems.FOOL_CARD.get()))
-                    .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.FOOL_CARD);
-                        output.accept(ModItems.MAGICIAN_CARD);
 
-                    }).build());*/
-//    如果要添加新的物品栏，格式参上，也就是把已有的复制一遍改个名
 
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);

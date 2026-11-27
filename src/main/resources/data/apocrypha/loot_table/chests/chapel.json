@@ -28,10 +28,11 @@
       ],
       "entries": [
         {"type": "minecraft:item","name": "apocrypha:tarot/hierophant_card","weight": 10},
-        {"type": "minecraft:item","name": "apocrypha:tarot/sun_card","weight": 8},
+        {"type": "minecraft:item","name": "apocrypha:tarot/high_priestess_card","weight": 10},
         {"type": "minecraft:item","name": "apocrypha:tarot/moon_card","weight": 8},
         {"type": "minecraft:item","name": "apocrypha:tarot/hermit_card","weight": 6},
         {"type": "minecraft:item","name": "minecraft:golden_apple","weight": 4},
+        {"type": "minecraft:item","name": "apocrypha:eternal_heart","weight": 3},
         {"type": "minecraft:empty","weight": 6,"quality": -1}
       ]
     },
@@ -43,7 +44,7 @@
       ],
       "entries": [
         {"type": "minecraft:item","name": "apocrypha:tarot/hierophant_card","weight": 10},
-        {"type": "minecraft:item","name": "apocrypha:tarot/sun_card","weight": 8},
+        {"type": "minecraft:item","name": "apocrypha:tarot/high_priestess_card","weight": 10},
         {"type": "minecraft:item","name": "apocrypha:tarot/moon_card","weight": 8},
         {"type": "minecraft:item","name": "apocrypha:tarot/hermit_card","weight": 6}
         ]

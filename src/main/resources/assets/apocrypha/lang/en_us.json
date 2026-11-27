@@ -27,6 +27,10 @@
   "item.apocrypha.tarot.card_sun": "The Sun (Reversed)",
 
   "item.apocrypha.wafer": "The Wafer",
+  "item.apocrypha.eternal_heart": "Heart of Eternity",
+
+  "effect.apocrypha.wafer": "The Wafer",
+  "effect.apocrypha.eternal_heart": "Heart of Eternity",
 
   "item.apocrypha.silver_sword": "Silver Sword",
   "item.apocrypha.silver_pickaxe": "Silver Pickaxe",
@@ -50,10 +54,11 @@
   "block.apocrypha.deepslate_silver_ore": "Deepslate Silver Ore",
   "block.apocrypha.raw_silver_block": "Block of Raw Silver",
 
-  "effect.apocrypha.wafer": "The Wafer",
+
   "effect.apocrypha.invulnerability": "Invulnerability",
   "effect.apocrypha.hemophobia": "Hemophobia",
   "effect.apocrypha.ghost": "Ghost",
+  "effect.apocrypha.insight": "Insight",
 
 
   "itemGroup1.apocrypha": "Tarot",

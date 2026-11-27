@@ -1,0 +1,22 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "minecraft:bamboo_jungle",
+    "minecraft:birch_forest",
+    "minecraft:dark_forest",
+    "minecraft:forest",
+    "minecraft:jungle",
+    "minecraft:mangrove_swamp",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:pale_garden",
+    "minecraft:plains",
+    "minecraft:sparse_jungle",
+    "minecraft:swamp",
+    "minecraft:taiga"
+  ],
+  "spawners": [
+    {"type": "apocrypha:bloodsucking_zombie", "weight": 40, "minCount": 1, "maxCount": 4}
+  ]
+}

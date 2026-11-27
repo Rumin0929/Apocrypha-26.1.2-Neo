@@ -18,6 +18,13 @@ public class ModConsumables {
                     new ClearAllStatusEffectsConsumeEffect()
             ).build();
 
+    public static final Consumable HIGH_PRIESTESS_CARD =ModConsumables.defaultTarot()
+            .onConsume(
+                    new ApplyStatusEffectsConsumeEffect(
+                            new MobEffectInstance(ApocryphaModEffects.INSIGHT,180*20,0)
+                    )
+            ).build();
+
     public static final Consumable HIEROPHANT_CARD = ModConsumables.defaultTarot().build();
 
     public static final Consumable CHARIOT_CARD=ModConsumables.defaultTarot()
@@ -69,8 +76,15 @@ public class ModConsumables {
     public static final Consumable WAFER=ModConsumables.defaultRelic()
         .onConsume(
                 new ApplyStatusEffectsConsumeEffect(
-                        new MobEffectInstance(ApocryphaModEffects.WAFER,-1,0,false,false,false))
+                        new MobEffectInstance(ApocryphaModEffects.WAFER,-1,0,false,false,false)
+                )
         ).build();
+    public static final Consumable ETERNAL_HEART = ModConsumables.defaultRelic()
+            .onConsume(
+                    new ApplyStatusEffectsConsumeEffect(
+                            new MobEffectInstance(ApocryphaModEffects.ETERNAL_HEART, -1, 0, false, false, false)
+                    )
+            ).build();
 
 
     public static Consumable.Builder defaultTarot() {
@@ -80,6 +94,5 @@ public class ModConsumables {
     public static Consumable.Builder defaultRelic() {
         return Consumable.builder().consumeSeconds(0F).animation(ItemUseAnimation.NONE).sound(SoundEvents.TRIDENT_THUNDER).hasConsumeParticles(false);
     }
-
 
 }

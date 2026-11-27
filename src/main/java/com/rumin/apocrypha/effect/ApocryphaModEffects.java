@@ -27,8 +27,7 @@ public class ApocryphaModEffects {
     public static final DeferredRegister<MobEffect> EFFECTS=
             DeferredRegister.create(Registries.MOB_EFFECT, Apocrypha.MOD_ID);
 
-    public static final DeferredHolder<MobEffect,MobEffect> WAFER=
-            EFFECTS.register("wafer",()->new WaferEffect(MobEffectCategory.NEUTRAL,15526857));
+//  状态效果
     public static final DeferredHolder<MobEffect,MobEffect> INVULNERABILITY =
             EFFECTS.register("invulnerability",()->new InvulnerabilityEffect(MobEffectCategory.BENEFICIAL,16766720));
     public static final DeferredHolder<MobEffect,MobEffect> HEMOPHOBIA =
@@ -42,7 +41,21 @@ public class ApocryphaModEffects {
 
                 }
             });
+    public static final DeferredHolder<MobEffect,MobEffect> INSIGHT=
+            EFFECTS.register("insight",()->new InsightEffect(MobEffectCategory.NEUTRAL,5231103));
 
+
+//  圣遗物
+    public static final DeferredHolder<MobEffect,MobEffect> WAFER=
+            EFFECTS.register("wafer",()->new WaferEffect(MobEffectCategory.NEUTRAL,15526857));
+    public static final DeferredHolder<MobEffect,MobEffect> ETERNAL_HEART=
+            EFFECTS.register("eternal_heart",()->new MobEffect(MobEffectCategory.BENEFICIAL,15398143){
+                {
+                    addAttributeModifier(Attributes.MAX_HEALTH,
+                            Identifier.fromNamespaceAndPath(Apocrypha.MOD_ID,"effect.eternal_heart"),
+                            8.0,AttributeModifier.Operation.ADD_VALUE);
+                }
+            });
 
 
 

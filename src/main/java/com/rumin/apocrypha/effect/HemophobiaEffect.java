@@ -13,7 +13,7 @@ public class HemophobiaEffect extends MobEffect {
     }
 
     @SubscribeEvent
-    public static void gentle(AttackEntityEvent event){
+    public static void attackHandler(AttackEntityEvent event){
         if (event.getEntity().hasEffect(ApocryphaModEffects.HEMOPHOBIA)){
             event.setCanceled(true);
         }
