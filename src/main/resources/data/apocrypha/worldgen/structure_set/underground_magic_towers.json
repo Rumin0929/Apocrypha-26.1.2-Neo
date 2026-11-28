@@ -1,0 +1,11 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 20083232,
+    "separation": 10,
+    "spacing": 38
+  },
+  "structures": [
+    {"structure": "apocrypha:underground_magic_tower", "weight": 1}
+  ]
+}
