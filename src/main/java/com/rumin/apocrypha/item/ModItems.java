@@ -20,8 +20,9 @@ public class ModItems {
             FoolCardItem::new,
             props->props.component(DataComponents.CONSUMABLE,ModConsumables.FOOL_CARD).useCooldown(1.0F));
     public static final DeferredItem<Item> MAGICIAN_CARD=ITEMS.registerSimpleItem("tarot/magician_card");
-    public static final DeferredItem<Item> HIGH_PRIESTESS_CARD=ITEMS.registerSimpleItem("tarot/high_priestess_card",
-            ()->new Item.Properties().component(DataComponents.CONSUMABLE,ModConsumables.HIGH_PRIESTESS_CARD).useCooldown(1.0F));
+    public static final DeferredItem<Item> HIGH_PRIESTESS_CARD=ITEMS.registerItem("tarot/high_priestess_card",
+            HighPriestessCardItem::new,
+            props->props.component(DataComponents.CONSUMABLE,ModConsumables.HIGH_PRIESTESS_CARD).useCooldown(3.0F));
     public static final DeferredItem<Item> EMPRESS_CARD=ITEMS.registerSimpleItem("tarot/empress_card");
     public static final DeferredItem<Item> EMPEROR_CARD=ITEMS.registerSimpleItem("tarot/emperor_card");
     public static final DeferredItem<Item> HIEROPHANT_CARD=ITEMS.registerItem("tarot/hierophant_card",
@@ -48,7 +49,9 @@ public class ModItems {
     public static final DeferredItem<Item> TOWER_CARD=ITEMS.registerItem("tarot/tower_card",
             TowerCardItem::new,
             props->props.component(DataComponents.CONSUMABLE,ModConsumables.TOWER_CARD).useCooldown(1.0F));
-    public static final DeferredItem<Item> STAR_CARD=ITEMS.registerSimpleItem("tarot/star_card");
+    public static final DeferredItem<Item> STAR_CARD=ITEMS.registerItem("tarot/star_card",
+            StarCardItem::new,
+            props->props.component(DataComponents.CONSUMABLE,ModConsumables.STAR_CARD).useCooldown(3.0F));
     public static final DeferredItem<Item> MOON_CARD=ITEMS.registerItem("tarot/moon_card",
             MoonCardItem::new,
             props->props.component(DataComponents.CONSUMABLE,ModConsumables.MOON_CARD).useCooldown(1.0F));

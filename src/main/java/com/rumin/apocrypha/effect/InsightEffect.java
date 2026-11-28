@@ -30,14 +30,14 @@ public class InsightEffect extends MobEffect {
         ServerLevel level=(ServerLevel) serverPlayer.level();
         for (LivingEntity mob :level.getEntitiesOfClass(
                 LivingEntity.class,
-                serverPlayer.getBoundingBox().inflate(15),
+                serverPlayer.getBoundingBox().inflate(16),
                 e->!(e instanceof Player))){
             mob.addEffect(new MobEffectInstance(MobEffects.GLOWING,100,0));
         }
         serverPlayer.removeEffect(MobEffects.DARKNESS);
         serverPlayer.removeEffect(MobEffects.BLINDNESS);
 
-        level.playSound(null, serverPlayer.getX(), serverPlayer.getY(), serverPlayer.getZ(), SoundEvents.BEACON_ACTIVATE, SoundSource.PLAYERS, 0.2F, 1.0F);
+        level.playSound(null, serverPlayer.getX(), serverPlayer.getY(), serverPlayer.getZ(), SoundEvents.BEACON_ACTIVATE, SoundSource.PLAYERS, 0.6F, 1.0F);
 
     }
 }

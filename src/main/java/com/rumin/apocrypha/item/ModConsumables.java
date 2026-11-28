@@ -65,6 +65,7 @@ public class ModConsumables {
             ).build();
 
     public static final Consumable TOWER_CARD = ModConsumables.defaultTarot().build();
+    public static final Consumable STAR_CARD = ModConsumables.defaultTarot().build();
     public static final Consumable MOON_CARD = ModConsumables.defaultTarot().build();
     public static final Consumable SUN_CARD = ModConsumables.defaultTarot().build();
 

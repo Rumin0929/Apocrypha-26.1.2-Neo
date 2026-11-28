@@ -39,7 +39,7 @@ public class ModCreativeModeTabs {
 //                        output.accept(ModItems.TEMPERANCE_CARD);
 //                        output.accept(ModItems.DEVIL_CARD);
                         output.accept(ModItems.TOWER_CARD);
-//                        output.accept(ModItems.STAR_CARD);
+                        output.accept(ModItems.STAR_CARD);
                         output.accept(ModItems.MOON_CARD);
                         output.accept(ModItems.SUN_CARD);
 //                        output.accept(ModItems.JUDGEMENT_CARD);

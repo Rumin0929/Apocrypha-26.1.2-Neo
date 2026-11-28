@@ -9,6 +9,7 @@ import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 @EventBusSubscriber(modid = Apocrypha.MOD_ID)
 public class RecipeUnlocker {
 
+
     @SubscribeEvent
     public static void unlockAll(PlayerEvent.PlayerLoggedInEvent event){
         if (!(event.getEntity() instanceof ServerPlayer serverPlayer))return;
